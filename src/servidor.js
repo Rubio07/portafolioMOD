@@ -13,5 +13,5 @@ app.use(express.static(join(__dirname,'public')));
 app.get('/',(req,res)=>{
     res.render('index.ejs')
 });
-app.listen(3000);
-console.log(`servidor corriendo en el puerto ${3000}`);
+app.listen(process.env.PORT||3000);
+console.log(`servidor corriendo en el puerto ${process.env.PORT||3000}`);
