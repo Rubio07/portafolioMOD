@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Riot&family=Protest+Strike&display=swap');
+.color1 {color: #003433;}
+.color2 {color: #09473c;}
+.color3 {color: #2c6448;}
+.color4 {color: #5b8a56;}
+.color5 {color: #9eba67;}
+body{
+    font-family: "Protest Strike", sans-serif;
+    background-size: cover;
+    background-color: #09473c;/* color de fondo principal */
+    background-position: center;
+    background-attachment: fixed;
+}
+p{
+    font-weight: 100;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003433;/*color de fondo de la barra de menú*/
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    left: 0;
+}
+
+a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2c6448;    
+    font-size: 0.9em;  
+}
+
+#a_mail{
+    color: rgb(1, 5, 83);
+}
+
+#foto{
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+
+
+.navbar a:hover, a.active {
+    color: #71f704;/* color de letras de la barra de navegacion en hover */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+    padding: 10px;
+    
+}
+
+.seccion{
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+span{
+    color: rgb(1, 5, 83);/* color de letras resaltadas */
+}
+/* efecto maquina de escribir */
+#typewriter{
+    color: yellowgreen;
+    font-family: monospace;
+    width: 54ch;
+    position: relative;
+}
+#typewriter::after{
+    content: "";
+    border-left: 4px solid yellowgreen;
+    background: #09473c;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: typew 4s infinite alternate steps(54);
+}
+@keyframes typew {
+    from {
+        width: 100%
+    }
+    to {
+        width: 0;
+    }
+}/* fin efecto maquina de escribir */
+/* seccion inicio */
+#nombre{
+    font-size:4em;
+}
+#welcome{
+    font-size: 1.5em;
+}
+#cv{
+    padding: 0.8%;
+    width: 10.5ch;
+    background-color: rgb(1, 5, 83);
+    text-decoration: none;
+    color: #13303d;
+    border-radius: 10px;
+}
+#redes{
+    display: flex;
+    height: 12%;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+#redes i{
+    font-size: 20px;
+    border-radius: 100%;
+    padding: 35%;
+}
+.fa-github{
+    color: black;
+}
+.fa-linkedin-square{
+    color: black;
+}
+.fa-whatsapp{
+    color:black;
+}
+.fa-envelope{
+    color: black;
+}
+
+.fa-github:hover{
+    color: black;
+    box-shadow: 0px 0px 15px black,
+                0px 0px 45px black,
+                0px 0px 75px black,
+                0px 0px 115px black;
+}
+.fa-linkedin-square:hover{
+    color: #0A66C2;
+    box-shadow: 0px 0px 15px #0A66C2,
+                0px 0px 45px #0A66C2,
+                0px 0px 75px #0A66C2,
+                0px 0px 115px #0A66C2;
+}
+.fa-whatsapp:hover{
+    color:#128C7E ;
+    box-shadow: 0px 5px 10px #128C7E,
+                0px 0px 45px #128C7E,
+                0px 0px 75px #128C7E,
+                0px 0px 115px #128C7E;
+}
+.fa-envelope:hover{
+    color: rgb(75, 3, 75);
+    box-shadow: 0px 0px 10px rgb(75, 3, 75),
+                0px 0px 45px rgb(75, 3, 75),
+                0px 0px 75px rgb(75, 3, 75),
+                0px 0px 115px rgb(75, 3, 75);
+}
+/*fin seccion inicio */
+/* seccion sobre mi */
+.tit{
+    font-size: 2.5em;
+    color: black;
+
+}
+/* fin seccion sobre mi */
+
+/* seccion form */
+
+#Registro{
+    align-items: center;
+}
+.form_container{
+    background-color: #09473c;
+    width: 300px;
+    border-radius: 2px;
+    box-shadow: 7px 13px 37px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.controls{
+    background-color: #09473c;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    border: 1px solid #0D065B;
+    font-size: 18px;
+    font-family: 'calibri';
+    color: #0D065B;
+}
+.controls::placeholder{
+    font-size: 13px;
+}
+.form_container a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.form_container .boton{
+    background-color: #55a29e;
+    border: none;
+    color: rgb(59, 87, 80);
+    font-size: 16px;
+    border-radius: 7px;
+}
+/* fin seccion form */
+/* animación secciones */
+/* @keyframes show {
+    from{
+        opacity: 0.5;
+        background-color: #B9C4BB;
+        scale: 25%;
+        padding: 100px;
+    }
+    to{
+        opacity: 1;
+        background-color: #13303d;
+        scale: 100%;
+    }
+}
+
+.seccion{
+    view-timeline-name: --section;
+    view-timeline-axis: block;
+
+    animation-timeline: --section;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+} */
+
+/* tablas */
+.p_et{
+    border: solid;
+    width: 700px;
+}
+
+h1{
+    color: #467c88;
+    font-weight: 400;
+}
+
+h2{
+    color: #B9C4BB;
+    font-weight: 400;
+
+}
+
+table{
+    color: #B9C4BB;
+}
+
+.h1_edu{
+    font-size:1.2em;
+}
+
+.h2_edu{
+    font-size:1.2em;
+}
+td{
+    align-content: start;
+}
+.cel_1 span{
+    color: #676868;
+}
+.cel_1 a{
+    background-color: yellowgreen;
+    padding: 0.1%;
+    width: 9.5ch;
+    text-decoration: none;
+    color: #13303d;
+    border-radius: 10px;
+}
+.cel_2{
+    padding: 27px;
+    font-size: 0.8em;
+}
+
+.cel_2 span{
+    color: yellowgreen;
+}
+#t_edu p{
+    width: 66%;
+    font-size: 0.8em;
+}
+#tit_edu{
+    margin-bottom: -10px;
+}
+#skills div{
+    display: flex;
+    flex-direction: row;
+}
+.fa-js{
+    background-color: #323330;
+    color: #F0DB4F;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.fa-js span{
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: monospace;
+}
+.fa-css3-alt{
+    background-color: #264de4;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.fa-css3-alt span{
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.fa-html5{
+    background-color: #E44D26;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.fa-html5 span{
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.fa-bootstrap{
+    background-color: #264de4;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.fa-bootstrap span{
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.fa-font-awesome{
+    background-color: #264de4;
+    color: white;
+    font-size: 15px;
+    padding: 3px;
+}
+
+#sp_fonta{
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: monospace;
+    padding: 3px;
+    padding-top: 6.5px;
+}
+
+.fa-node{
+    background-color: #68A063;
+    color: #602C50;
+    font-size: 18px;
+    padding: 3.5px;
+}
+
+.fa-node span{
+    color: #080135;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+#mysql{
+    position: relative;
+    top: 15px;
+    padding: 4px;
+} 
+#oracle{
+    position: relative;
+    top: 14px;
+    /* background-color: white; */
+    padding-top: 1px;
+} 
+
+#sp_vsc{
+    background-color: #0098FF;
+    color: black;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: monospace;
+    padding: 7.5px;
+    padding-bottom: 3px;
+}
+#vsc{
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+    padding: 3px;
+}
+.sp_lan{
+    background-color: white;
+    padding: 2px;
+    padding-bottom: 3px;
+}
+#cpp{
+    position: relative;
+    top: 9px;
+    padding: 3px;
+}
